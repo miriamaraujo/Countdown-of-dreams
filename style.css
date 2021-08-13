@@ -1,0 +1,54 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Montserrat';
+            color: rgb(56, 67, 78);
+            background: rgb(239, 240, 243);
+        }
+        
+        h2 {
+            font-size: 4em;
+            font-weight: bold;
+            margin-bottom: 100px;
+            color: rgb(104, 117, 141);
+        }
+        
+        .coming-soon {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .countdown {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+        }
+        
+        .day,
+        .hour,
+        .minute,
+        .second {
+            font-size: 2em;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.10);
+            padding: 15px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            background: #fff;
+        }
+        
+        @media only screen and (max-width: 600px) {
+            .coming-soon {
+                width: 100%;
+                padding: 5%;
+            }
+            h2 {
+                text-align: center;
+            }
+        }
